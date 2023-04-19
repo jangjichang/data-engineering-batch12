@@ -83,7 +83,8 @@ sudo service postgresql restart
 sudo su airflow
 $ cd ~/
 $ mkdir dags
-$ AIRFLOW_HOME=/var/lib/airflow airflow db init
+$ export AIRFLOW_HOME=/var/lib/airflow
+$ airflow db init
 $ ls /var/lib/airflow
 airflow.cfg  airflow.db  dags   logs  unittests.cfg
 ```
